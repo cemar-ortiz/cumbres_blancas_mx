@@ -1,107 +1,148 @@
-body {
-    margin:0px;
-    font-family: Helvetica;
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap');
+
+body{
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
 }
 
-.header{
-    width: 100%;
-    height: 120px;
-    background-color: black;
-    display: flex;
-    justify-content: space-around;
-}
-.header__img{
-    width: 200px;
-    height: 75px;
-    margin-top: 20px;
-    margin-left: 10px;
-}
-.header__button{
-    width: 200px;
-    margin-top: 10px;
-    margin-left: 10px;
-    color: #CDEBF3;
-}
-.header__menu {
-    color: #2C637B;
-    margin-right: 30px;
-	margin-top: 55px;
-}
-.header__menu ul {
-    display: none;
-    list-style: circle;
-    padding: 0px;
-    padding-top: 5px;
-    width: 180px;
-    text-align: left;
-    margin: 25px 0px 0px 5px;
-    font-size: 12px;
-    color: #CDEBF3;
-}
-.header__menu:hover ul, ul:hover{
-    display: block;
-}
-.header__menu ul li {
-    margin-bottom: 8px;
-}
-.header__menu li a {
-    color: white;
-    text-decoration: none;
-}
-.header__menu li a:hover {
-    text-decoration: underline;
-}
+/* Header and Nav bar */
 
-.header__menu--title {
-    margin-right: 8px;
-    width: 180px;
-    display: flex;
-    justify-content: space-evenly;
-    font-weight: bold;
-    font-size:14px;
-}
-.countdown {
-	height:200px;
-	background-color: grey;
-}
-.album {
-	height:200px;
-	background-color: white;
-} 
-.news {
-	height:200px;
-	background-color: grey;
-}
-.contact {
-	height:200px;
-	background-color: white;
-}
-
-.footer {
-    background-color: black;
+.header {
+    height: 24px;
     display: flex;
     align-items: center;
+    column-gap: 4px;
+    justify-content: right;
+
+}
+
+.header_icon{
+    height: 100%;
+}
+
+nav{
+    background-color: black;
+    height: 104px;
+    display: flex;
     justify-content: space-evenly;
-    height: 150px;
+    align-items: center;
+    
+}
+
+.cumbre_logo{
+    width: 180px;
+}
+
+.nav_title{
+    color:white;
+    margin: 0;
+    position: relative;
+    bottom: -20px;
+    font-weight: bold;
+
+}
+
+.contact_title{
+    color: black;
+    background-color: white;
+}
+.contact_title p{
+    padding: 4px 20px;
+    margin: 0;
+}
+
+/* First section */
+.home_first{
     width: 100%;
+    height: 650px;
+    background-image: url("./assets/images/Se\ extinguen\ los\ glaciares.jpeg");
+    background-size: cover;
+    background-position-y: -100px;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.donation_button{
+    color: white;
+    font-weight: bold;
+    background-color: black;
+    padding: 12px;
+    border-radius: 0 5px 5px 0;
+}
+.first_text{
+    position: relative;
+    left: -208px;
+}
+.first_text > p{
+    font-size: 64px;
+}
+
+.first_sub{
+    display: flex;
+    justify-content: space-between;
+    row-gap: 8px;
+}
+
+
+.first_sub_sub > h1{
+    color: darkcyan;
+    font-size: 48px;
+    margin: 0;
+}
+.first_sub_sub > p{
+    text-decoration: underline;
+    text-underline-offset: 16px;
+    font-weight: bold;
+    font-size: 12px;
+
+}
+
+.first_logos{
+    display: flex;
     flex-direction: column;
-}
-.footer p {
-	color: white;
-	margin: 0px;
-}
-
-.footer a {
-	color: white;
-	text-decoration: none;
+    padding: 0 4px;
+    background-color: black;
+    color: white;
+    border-radius: 5px 0 0 5px;
 }
 
-.footer a:hover{
-	text-decoration: underline;
+
+/* Second Section */
+
+.head_second{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-.footer hr {
-	color: white;
-	width: 75%;
+.head_second h2{
+    font-size: 36px;
 }
 
+.head_second p{
+    font-size: 12px;
+}
+
+.second_images{
+    display: flex;
+}
+
+.left_image{
+    background-image: url("./assets/images/Citlaltepetl.jpeg");
+    width: 33%;
+    height: 500px;
+    background-position-y: -100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.right_image{
+    background-image: url("./assets/images/iztaccihuatl.png");
+    width: 67%;
+    height: 500px;
+    background-position-y: -100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
