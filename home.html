@@ -5,10 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cumbres Blancas</title>
-    <link rel="stylesheet" href="./styles_home.css">
 
     <!--Unicon assets-->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!--Swiper-->
+    <link rel="stylesheet" href="./swiper-bundle.min.css"/>
+
+    <link rel="stylesheet" href="./styles_home.css">
+
+
 </head>
 <body>
     <header class="header">
@@ -71,9 +77,71 @@
             </p>
         </div>
         <div class="second_images">
-            <div class="left_image"></div>
-            <div class="right_image"></div>
+            <div class="left_image">
+                <span>Citlaltépetl</span>
+                <span>Glaciar de Jamapa</span>
+            </div>
+            <div class="right_image">
+                <div>
+                    <span>Iztaccíhuatl</span>
+                    <span>Glaciar del Pecho</span>
+                </div>
+                <div>
+                    <span>Iztaccíhuatl</span>
+                    <span>Glaciar de la Panza</span>
+                </div>
+            </div>
         </div>
     </section>
+
+    <section class="home_news">
+        <h1>Noticias</h1>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide news_content">
+                    <div class="news_image">
+                        <img src="./assets/images/cumbre del agua.png" alt="cumbre">
+                    </div>
+                    <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y
+                        archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de
+                        las industrias desde el año 1500, cuando un impresor (N. del T. persona
+                        que se dedica a la imprenta) desconocido usó una galería de textos.</p>
+                </div>
+                <div class="swiper-slide news_content">
+                    <div class="news_image">
+                        <img src="./assets//images/conejo.JPG" alt="conejo">
+                    </div>
+                    <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y
+                        archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de
+                        las industrias desde el año 1500, cuando un impresor (N. del T. persona
+                        que se dedica a la imprenta) desconocido usó una galería de textos.</p>
+                </div>
+                <div class="swiper-slide news_content">
+                    <div class="news_image">
+                        <img src="./assets/images/ski.jpeg" alt="ski">
+                    </div>
+                    <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y
+                        archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de
+                        las industrias desde el año 1500, cuando un impresor (N. del T. persona
+                        que se dedica a la imprenta) desconocido usó una galería de textos.</p>
+                </div>
+                <div class="swiper-slide news_content">Slide 4</div>
+
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-button-prev">
+                <i class="uil uil-angle-left swiper-button-icon"></i>
+            </div>
+            <div class="swiper-button-next">
+                <i class="uil uil-angle-right swiper-button-icon"></i>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="./assets/js/swiper.js"></script>
 </body>
 </html>
